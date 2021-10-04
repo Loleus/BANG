@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" screen>
+    <title>Project-Clock-XY</title>
+</head>
+<body>
+    <div class="wrap">
+        <div id="header" class="header bgc">
+            <span id="logo" class="logo">BANG</span>
+            <div id="screws">
+                <span class="srub"></span>
+                <span class="srub"></span>
+                <span class="srub"></span>
+                <span class="srub"></span>
+            </div>
+        </div>
+        <nav id="nav" class="info">
+            <span id="numer"></span>
+            <div>
+                <p>Connecting...</p>
+            </div>
+            <span id="data"></span>
+        </nav>
+        <main id="display">
+            <div id="screws2">
+                <span class="srub"></span>
+                <span class="srub"></span>
+            </div>
+            <section class="buttons">
+                <button id="btn0">Start</button>
+                <button id="btn1">Start</button>
+                <button id="btn2">Start</button>
+                <button id="btn3">Start</button>
+                <button id="btn4">Start</button>
+            </section>
+            <div id="box">
+            </div>
+            <div id="sliders">
+                <form>
+                    <input autocomplete="off" name="x" type="range" min="0" max="400" value="200">
+                </form>
+                <p>COORDS</p>
+                <form>
+                    <input autocomplete="off" name="y" type="range" min="0" max="400" value="200">
+                </form>
+            </div>
+        </main>
+        <main id="footer">
+            <div id="screws3">
+                <span class="srub"></span>
+                <span class="srub"></span>
+            </div>
+            <span id="x"></span>
+            <button id="reset">RESET</button>
+            <span id="y"></span>
+        </main>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        main();
+    </script>
+</body>
+</html>
