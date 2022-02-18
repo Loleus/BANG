@@ -12,12 +12,7 @@
   -webkit-touch-callout: none;
 }
 body {
-  background: linear-gradient(
-    90deg,
-    rgb(10, 20, 43) 0%,
-    #1c1c31 50%,
-    rgb(61, 70, 153) 100%
-  );
+  background: linear-gradient(90deg, #24240f 0%, #1c311f 50%, #093e44 100%);
   margin: 0;
   height: 100vh;
   display: flex;
@@ -37,12 +32,13 @@ body {
   max-width: 100vw;
   width: 160vh;
   padding: 0;
-  box-shadow: 0 0px 5px 0px black, inset 0 0 10px #000000;
-  border: 1vh double black;
+  box-shadow: 0 0px 5px 0px black, inset 0 0 20px #000000;
+  /* border: 1vh double black; */
 }
 .bgc {
-  background: radial-gradient(#00a2ff 15%, rgba(0, 0, 0, 0) 16%),
-    radial-gradient(#00a2ff 15%, rgba(0, 0, 0, 0) 16%), #311c30;
+  background: radial-gradient(#103937 15%, rgba(0, 0, 0, 0) 16%),
+    radial-gradient(#103937 15%, rgba(0, 0, 0, 0) 16%),
+    #1d242d;
   background-position: 0 0, 1.5vw 1.5vw;
   background-size: 3vw 3vw;
 }
@@ -50,8 +46,8 @@ body {
   color: #aaa;
   vertical-align: text-top;
   padding: 0;
-  line-height: 18vh;
-  font-size: 12vw;
+  line-height: 20vh;
+  font-size: 16vh;
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -81,17 +77,17 @@ main {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0px 5px 0px black, inset 0 0 10px #000000;
-  border: 1vh double black;
+  box-shadow: 0 0px 5px 0px black, inset 0 0 20px #000000;
+  /* border: 1vh double black; */
   background: linear-gradient(
     90deg,
-    rgb(19, 27, 46) 0%,
-    #311c30 50%,
-    rgb(99, 133, 141) 100%
+    #131b2e 0%,
+    #1c2f31 50%,
+    #184608 100%
   );
   background-size: 125% 100%;
   font-size: 1vw;
-  padding: 1vh 0;
+  padding:2vh 0;
   z-index: 0;
 }
 
@@ -101,23 +97,15 @@ main {
   height: 26vh;
   position: relative;
   border-radius: 50%;
-  box-shadow: var(--sx) var(--sy) 2vh var(--ss) black;
+  box-shadow: var(--sx) var(--sy) calc(var(--ss) + 3px) var(--ss) black;
   background-image: radial-gradient(
     circle at var(--lx) var(--ly),
-    rgba(224, 238, 174, 1) 1%,
-    rgb(8, 8, 26) 80%,
-    rgb(8, 8, 26) 100%
+    rgb(234, 255, 158) 1%,
+    rgb(197, 212, 142) 10%,
+    rgb(3, 3, 10) 80%,
+    rgb(0, 0, 0) 100%
   );
-
-}
-
-main p {
-  display: inline;
-  font-size: 1.2vw;
-  color: lightgreen;
-  font-weight: bold;
-  text-shadow: 0 0 6px #3150d4;
-}
+};
 
 main span {
   display: inline-block;
@@ -134,11 +122,13 @@ main span {
   max-height: 4vh;
   background: radial-gradient(
     ellipse at center,
-    rgba(206, 220, 231, 1) 0%,
-    rgba(89, 106, 114, 1) 100%
+    rgba(206, 220, 231, 1) 30%,
+    rgba(89, 106, 114, 1) 80%
   );
   border-radius: 50%;
   border: 0.2vw solid rgb(56, 59, 40);
+  box-shadow: 0 0px 5px 0px black,
+  inset 0 0 10px #000000;
   z-index: 0;
 }
 .srub:before,
@@ -186,14 +176,17 @@ main span.srub:nth-child(2) {
 }
 
 nav.info {
-  padding: 0.6vw 0;
+  padding: 0.6vh 0;
   cursor: pointer;
-  font-size: 2.4vw;
-  height: 3.9vw;
+  font-size: 3vh;
+  height: 5vh;
   -webkit-user-select: none; /* Safari 3.1+ */
   -moz-user-select: none; /* Firefox 2+ */
   -ms-user-select: none; /* IE 10+ */
   user-select: none; /* Standard syntax */
+  background: #10171a;
+  box-shadow: 0 0px 16px 0px black,
+  inset 0 0px 6px #000;
 }
 nav.info:hover span {
   color: white;
@@ -231,7 +224,7 @@ nav.info:hover span {
   position: relative;
   float: left;
   width: 60%;
-  height: 100%;
+  height: 104%;
   overflow: hidden;
   padding: 0;
   box-sizing: border-box;
@@ -258,10 +251,10 @@ main button {
   max-width: 27vh;
   text-transform: uppercase;
   display: inline-block;
-  background: #533a63;
+  background: #95c484;
   margin: 0 1%;
   box-shadow: 0 0 14px 1px black;
-  color: rgb(177, 177, 177);
+  color: #1c301c;
   font-weight: bold;
   font-size: 2vh;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -273,9 +266,9 @@ button#btn1::after,
 button#btn2::after,
 button#btn3::after,
 button#btn4::after {
-  font-size: 0.8em;
+  font-size: 2vh;
   font-weight: 400;
-  color: #bf8b74;
+  color: #488e6f;
   position: absolute;
   top: 120%;
   left: 0;
@@ -302,7 +295,7 @@ main button#btn3::after {
   content: "Shake";
 }
 main button#btn4::after {
-  content: "Move";
+  content: "Wave";
 }
 
 .pulse {
@@ -327,7 +320,7 @@ main button#btn4::after {
 
 @keyframes pulse {
   0% {
-    font-size: 12vw;
+    font-size: 16vh;
   }
 
   25% {
@@ -343,11 +336,11 @@ main button#btn4::after {
   }
 
   80% {
-    font-size: 8vw;
+    font-size: 8vh;
   }
 
   100% {
-    font-size: 12vw;
+    font-size: 16vh;
   }
 }
 
@@ -405,7 +398,7 @@ main button#btn4::after {
   }
 
   100% {
-    background-position: 1.5vw 1.5vw, 3vw -3vw;
+    background-position: 1.5vw 1.5vw, 3vw 3vw;
     background-size: 3vw 3vw;
   }
 }
@@ -501,10 +494,20 @@ div#sliders form {
   position: relative;
   display: inline;
 }
+
+main#display p,
+main#footer span{
+  display: inline;
+  font-size: 2.6vh;
+  color: lightgreen;
+  font-weight: bold;
+  text-shadow: 0 0 6px #3150d4;
+}
 div#sliders p {
-  font-size: 2vw;
+  font-size: 2vh;
   margin: 0 1vw;
 }
+
 div#sliders input {
   position: relative;
   display: inline-block;
