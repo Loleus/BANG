@@ -54,7 +54,7 @@ body {
   line-height: 20vh;
   font-size: 16vh;
   margin: 0;
-  font-family:  Arial, sans-serif;
+  font-family:  Arial, Helvetica, sans-serif;
   background: linear-gradient(135deg, #71da9e 25%, transparent 25%) -2vw 0,
     linear-gradient(225deg, #6e2aa5 25%, transparent 25%) -2vw 0,
     linear-gradient(315deg, #2d9973 25%, transparent 25%),
@@ -94,21 +94,14 @@ main {
   z-index: 0;
 }
 
-#box {
+div#box {
   margin: 6vh auto;
   width: 26vh;
   height: 26vh;
   position: relative;
   border-radius: 50%;
-  box-shadow: var(--sx) var(--sy) calc(var(--ss) + 2px) calc(var(--ss) - 5px)
-    rgba(0, 0, 0, 0.884);
-  background-image: radial-gradient(
-    circle at var(--lx) var(--ly),
-    rgb(127, 163, 181) 12%,
-    rgb(45, 86, 104) 30%,
-    rgb(10, 47, 53) 50%,
-    rgb(0, 0, 0) 100%
-  );
+  box-shadow: var(--sx) var(--sy) calc(var(--ss) + 2px) calc(var(--ss) - 5px) rgba(0, 0, 0, 0.884);
+  background-image: radial-gradient( circle at var(--lx) var(--ly), rgb(79, 148, 183) 2%, rgb(45, 86, 104) 30%, rgb(10, 47, 53) 55%, rgb(0, 0, 0) 95% );
 }
 
 main span {
@@ -218,7 +211,6 @@ nav.info:hover span {
   margin: 0 auto;
   z-index: 0;
   padding: 0;
-  text-shadow: 0 0 0.3vw rgb(3, 241, 3);
 }
 
 .info span {
@@ -227,7 +219,7 @@ nav.info:hover span {
   width: 20%;
   padding: 0;
   margin: 0;
-  color: lightgreen;
+  color: #427098;
   transition: all 0.3s;
 }
 
@@ -243,7 +235,7 @@ nav.info:hover span {
   border-right: 0.5vw;
   border-style: dotted;
   border-color: lightgreen;
-  background: #078311;
+  background: #03494d;
   position: relative;
   float: left;
   width: 60%;
@@ -276,9 +268,9 @@ main button {
   max-width: 27vh;
   text-transform: uppercase;
   display: inline-block;
-  background: #005b42;
+  background: #282f54;
   margin: 0 1%;
-  box-shadow: 0 0 14px 1px #103937;
+  /* box-shadow: 0 0 14px 1px #103937; */
   color: #8eeb8e;
   border: none;
   border-radius: 1vh;
@@ -286,6 +278,7 @@ main button {
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.3s;
+  border: double #427098;
 }
 
 main button#btn0::after,
@@ -293,7 +286,7 @@ button#btn1::after,
 button#btn2::after,
 button#btn3::after,
 button#btn4::after {
-  font-size: 2.1vh;
+  font-size: 1.5vh;
   font-weight: bold;
   color: #488e6f;
   position: absolute;
@@ -308,7 +301,7 @@ button#btn4::after {
 
 main button:hover {
   color: lightgreen;
-  background: #166f1d;
+  background: #404a7d;
 }
 
 main button#btn0::after {

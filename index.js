@@ -31,12 +31,12 @@ const animCircle = () => {
     let sumX = getInputValue(0)
     let sumY = getInputValue(1)
     // x
-    style.setProperty('--lx', `${50 - sumX}%`);
-    style.setProperty('--sx', `${sumX / 8}vh`);
+    style.setProperty('--lx', `${50 - sumX*0.7}%`);
+    style.setProperty('--sx', `${sumX / 2}vh`);
     circle.style.left = (sumX / 4) + "%"
     // y
-    style.setProperty('--ly', `${50 - sumY}%`);
-    style.setProperty('--sy', `${sumY / 8}vh`);
+    style.setProperty('--ly', `${50 - sumY*0.7}%`);
+    style.setProperty('--sy', `${sumY / 2}vh`);
     circle.style.top = (sumY / 4) + "%";
     // shadow
     (abs(sumX) > abs(sumY))
